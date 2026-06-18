@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
+console.log("MONGO_URI FOUND:", process.env.MONGO_URI ? "YES" : "NO");
+console.log("URI VALUE:", process.env.MONGO_URI);
 
 // Load env variables if .env exists
 dotenv.config();
